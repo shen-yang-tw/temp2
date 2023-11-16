@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html class="text-m" lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Designer&Developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師">
+		<title>靜宜記憶資料庫</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/svg" href="img/favicon.svg" />
+		<!-- /favicon -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-icons.css">
+		<link rel="stylesheet" href="css/tailwind.min.css">
+		<link rel="stylesheet" href="css/fontawesome.min.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/colors.min.css">
+		<link rel="stylesheet" href="css/editor.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+
+	<body id="top" class="index tw-min-h-screen">
+		<span class="tw-hidden">Some images has been designed using resources from <a href="https://unsplash.com/">Unsplash</a> &amp; <a href="https://pixabay.com/">Pixabay</a> &amp; <a href="https://www.pexels.com/">Pexels</a> &amp; <a href="https://www.freepik.com/">Freepik</a> and some icons from <a href="https://www.flaticon.com/">Flaticon</a></span>
+		<!-- header -->
+		<header class="pt-lg-4 lg:tw-relative">
+			<a id="first" class="visually-hidden-focusable" href="" aria-hidden="true"></a>
+			<!-- container -->
+			<div class="tw-shadow-xl tw-bg-white lg:tw-shadow-none">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light py-0 tw-flex-wrap">
+					<!-- Logo & Right Links -->
+					<div class="logoBG w-100">
+						<div class="d-flex w-100 position-relative justify-content-between container-fluid">
+							<!-- Logo -->
+							<h1 class="d-flex align-items-center m-0">
+								<a class="logo navbar-brand" href="" title="靜宜大學-校史資料室">
+									<img class="w-100" src="img/logo.svg" alt="靜宜大學-校史資料室">
+									<span class="tw-sr-only">靜宜大學-校史資料室</span>
+								</a>
+							</h1>
+							<div class="navbar-brand py-1 m-0 d-flex align-items-center">
+								<a class="logo d-inline-block ms-2" href="index.html" title="典藏靜宜">
+									<img src="img/logo2.svg" alt="典藏靜宜">
+									<span class="tw-sr-only">典藏靜宜</span>
+								</a>
+							</div>
+							<div class="rightItems d-flex align-items-center">
+								<a class="text-primary min_width-45 text-center text-decoration-none d-lg-none" href=""><i class="fa-solid fa-user"></i><span class="visually-hidden">使用者登入</span></a>
+								<button class="navbar-toggler tw-border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+									<i class="text-primary fas fa-bars"></i><span class="tw-sr-only">打開主選單</span></span>
+								</button>
+							</div>
+							<!-- /Logo -->
+							<!-- Right Nav -->
+							<div class="collapse navbar-collapse justify-content-end">
+								<ul class="sub_nav navbar-nav ms-auto tw-mt-0 tw-text-sm tw-flex-row tw-justify-center align-items-center">
+									<li class="nav-item d-flex tw-items-center">
+										<a class="nav-link text-nowrap hover:tw-underline" href="#">HI,XOX 登入</a>
+									</li>
+								</ul>
+							</div>
+							<!-- /Right Nav -->
+						</div>
+					</div>
+					<!-- /Logo & Right Links -->
+					<!-- mainMenu -->
+					<div class="mainmenu underlineAni my-4 d-none d-lg-block w-100 tw-relative">
+						
+						<div class="mainmenuContainer container-fluid">
+							<ul class="nav shadow rounded-pill justify-content-center m-0">
+								<li>
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" href="#">簡介</a>
+								</li>
+								<li class="dropdown">
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">典藏瀏覽</a>
+									<!-- Dropdown -->
+									<div class="indent dropdown-menu overflow-auto border-0 py-0 tw-bg-white tw-bg-opacity-95">
+										<ul class="list-group m-0">
+											<li class="list-group-item p-0 tw-bg-transparent">
+												<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Item</span></a>
+											</li>
+											<li class="list-group-item p-0 tw-bg-transparent">
+												<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Item</span></a>
+											</li>
+										</ul>
+									</div>
+									<!-- /Dropdown -->
+								</li>
+								<li class="dropdown">
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">典藏查詢</a>
+									<!-- Dropdown -->
+									<div class="indent dropdown-menu overflow-auto border-0 py-0 tw-bg-white tw-bg-opacity-95">
+										<ul class="list-group m-0">
+											<li class="list-group-item p-0 tw-bg-transparent">
+												<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Type</span></a>
+												<ul class="m-0 p-0">
+													<li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+														<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+													</li>
+													<li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+														<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item p-0 tw-bg-transparent">
+												<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Type</span></a>
+												<ul class="m-0 p-0">
+													<li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+														<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+													</li>
+													<li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+														<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<!-- /Dropdown -->
+								</li>
+								<li class="dropdown">
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">特色典藏</a>
+									<!-- Dropdown -->
+									<div class="indent dropdown-menu overflow-auto border-0 py-0 tw-bg-white tw-bg-opacity-95">
+										<ul class="list-group m-0">
+											<li class="list-group-item p-0 tw-bg-transparent">
+												<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Type</span></a>
+												<ul class="m-0 p-0">
+													<li class="list-group-item p-0 border-0 tw-bg-transparent">
+														<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+														<ul class="m-0 p-0">
+															<li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+																<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+															</li>
+															<li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+																<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="list-group-item p-0 tw-bg-transparent">
+												<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Type</span></a>
+												<ul class="m-0 p-0">
+													<li class="list-group-item p-0 border-0 tw-bg-transparent">
+														<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+														<ul class="m-0 p-0">
+															<li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+																<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+															</li>
+															<li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+																<a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<!-- /Dropdown -->
+								</li>
+								<li class="">
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" href="#">個人化服務</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /mainMenu -->
+				</nav>
+			</div>
+			<!-- /container -->
+			<!-- offcanvas -->
+			<div id="offcanvas" class="bg_primary offcanvas offcanvas-start tw-w-3/4" tabindex="-1">
+			  <div class="offcanvas-header py-2">
+			    <span></span>
+			    <button type="button" class="tw-px-[12px] tw-border-0 tw-bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+			  </div>
+			  <div class="offcanvas-body pt-0">
+			    <div class="list_offcanvas">
+			      <ul class="list-unstyled my-0">
+			        <li class="py-1">
+			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			            <a class="d-block w-100 position-relative" href="#">簡介</a>
+			          </div>
+			        </li>
+			        <li class="py-1 parent">
+			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			            <a class="d-block w-100 position-relative" href="#">典藏瀏覽</a>
+			            <a class="arrow px-3" href="" title="展開/收合選單"><span class="toggle fas fa-angle-right"><small class="tw-sr-only">展開選單</small></span><span class="toggle fas fa-angle-down tw-hidden"><small class="tw-sr-only">收合選單</small></a>
+			          </div>
+			          <ul class="toggle list-unstyled tw-pl-4 tw-mt-1 tw-hidden">
+			            <li class="py-1">
+			              <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                <a class="d-block w-100 position-relative" href="#">Item</a>
+			              </div>
+			            </li>
+			            <li class="py-1">
+			              <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                <a class="d-block w-100 position-relative" href="#">Item</a>
+			              </div>
+			            </li>
+			          </ul>
+			        </li>
+			        <li class="py-1 parent">
+			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			            <a class="d-block w-100 position-relative" href="#">典藏查詢</a>
+			            <a class="arrow px-3" href="" title="展開/收合選單"><span class="toggle fas fa-angle-right"><small class="tw-sr-only">展開選單</small></span><span class="toggle fas fa-angle-down tw-hidden"><small class="tw-sr-only">收合選單</small></a>
+			          </div>
+			          <ul class="toggle list-unstyled tw-pl-4 tw-mt-1 tw-hidden">
+			            <li class="py-1">
+			              <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                <a class="d-block w-100 position-relative" href="#">Item</a>
+			              </div>
+			              <ul class="list-unstyled tw-pl-4 tw-mt-1">
+			                <li class="py-1">
+			                  <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                    <a class="d-block w-100 position-relative" href="#">Item</a>
+			                  </div>
+			                </li>
+			                <li class="py-1">
+			                  <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                    <a class="d-block w-100 position-relative" href="#">Item</a>
+			                  </div>
+			                </li>
+			                <li class="py-1">
+			                  <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                    <a class="d-block w-100 position-relative" href="#">Item</a>
+			                  </div>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			        </li>
+			        <li class="py-1 parent">
+			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			            <a class="d-block w-100 position-relative" href="#">特色典藏</a>
+			            <a class="arrow px-3" href="" title="展開/收合選單"><span class="toggle fas fa-angle-right"><small class="tw-sr-only">展開選單</small></span><span class="toggle fas fa-angle-down tw-hidden"><small class="tw-sr-only">收合選單</small></a>
+			          </div>
+			          <ul class="toggle list-unstyled tw-pl-4 tw-mt-1 tw-hidden">
+			            <li class="py-1">
+			              <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                <a class="d-block w-100 position-relative" href="#">Item</a>
+			              </div>
+			              <ul class="list-unstyled tw-pl-4 tw-mt-1">
+			                <li class="py-1">
+			                  <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                    <a class="d-block w-100 position-relative" href="#">Item</a>
+			                  </div>
+			                  <ul class="list-unstyled tw-pl-4 tw-mt-1">
+			                    <li class="py-1">
+			                      <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                        <a class="d-block w-100 position-relative" href="#">Item</a>
+			                      </div>
+			                    </li>
+			                    <li class="py-1">
+			                      <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                        <a class="d-block w-100 position-relative" href="#">Item</a>
+			                      </div>
+			                    </li>
+			                  </ul>
+			                </li>
+			                <li class="py-1">
+			                  <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                    <a class="d-block w-100 position-relative" href="#">Item</a>
+			                  </div>
+			                  <ul class="list-unstyled tw-pl-4 tw-mt-1">
+			                    <li class="py-1">
+			                      <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                        <a class="d-block w-100 position-relative" href="#">Item</a>
+			                      </div>
+			                    </li>
+			                    <li class="py-1">
+			                      <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                        <a class="d-block w-100 position-relative" href="#">Item</a>
+			                      </div>
+			                    </li>
+			                  </ul>
+			                </li>
+			                <li class="py-1">
+			                  <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                    <a class="d-block w-100 position-relative" href="#">Item</a>
+			                  </div>
+			                  <ul class="list-unstyled tw-pl-4 tw-mt-1">
+			                    <li class="py-1">
+			                      <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                        <a class="d-block w-100 position-relative" href="#">Item</a>
+			                      </div>
+			                    </li>
+			                    <li class="py-1">
+			                      <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			                        <a class="d-block w-100 position-relative" href="#">Item</a>
+			                      </div>
+			                    </li>
+			                  </ul>
+			                </li>
+			              </ul>
+			            </li>
+			          </ul>
+			        </li>
+			        <li class="py-1">
+			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			            <a class="d-block w-100 position-relative" href="#">個人化服務</a>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</div>
+			<!-- offcanvas -->
+		</header>
+		<!-- /header -->
+		<!-- banner -->
+		<!-- /banner -->
+
+		<main>
+			<!-- index main content -->
+			<div class="searchBox min_height-300@md min_height-400@lg d-flex align-items-center py-2 my-md-4" style="background: url(img/banner.jpg)  no-repeat center center; background-size: cover;">
+			  <form class="container-fluid">
+			    <div class="p-3 bg-dark bg-opacity-30 rounded-4 shadow col-sm-8 col-lg-7 col-xl-6 ms-auto">
+			      <div class="p-0 card-body">
+			        <div class="tabs mb-2"><span class="text-light btn btn-primary me-2 tw-cursor-default">簡易檢索</span><a class="btn btn-light me-2" href="">進階檢索</a></div>
+			        <div class="input-group">
+			          <input type="text" class="form-control" placeholder="關鍵字搜尋" aria-describedby="btnSearch">
+			          <a class="btn_primary btn btn-primary" href="#"><i class="me-1 fas fa-search"></i>館藏查詢</a>
+			        </div>
+			        <div class="keywords mt-2"><span>熱門檢索詞：</span><a class="tw-underline me-2" href="#">病而得的事</a><a class="tw-underline me-2" href="#">每議人已識影</a></div>
+			      </div>
+			    </div>
+			  </form>
+			</div>
+			<section id="content" class="tw-space-y-4 tw-p-0 tw-relative">
+			  <!-- content -->
+			  <div class="min_height-200 pt-4 tw-space-y-4 lg:tw-space-y-6">
+			    <!-- container -->
+			    <div class="container-fluid overflow-hidden">
+			      <div class="highlight row g-4">
+			        <div class="col-md-4">
+			          <h2 class="h5 text-center pb-1 mb-4"><span class="border-bottom border-primary pb-1">熱門典藏</span></h2>
+			          <div class="shadow p-4">
+			            <div class="list max_height-215 overflow-auto row row-cols-1 px-2">
+			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">在腳應情朋客藥有學</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
+			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">著是利時，怎生了百</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
+			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">到基些知的每學外</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
+			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">半面一響面定山</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
+			            </div>
+			            <div class="text-center"><a class="btn btn-outline-light btn-sm border text-body rounded-pill tw-text-sm px-3 mt-2" href="">more</a></div>
+			          </div>
+			        </div>
+			        <div class="col-md-4">
+			          <h2 class="h5 text-center pb-1 mb-4"><span class="border-bottom border-primary pb-1">最新典藏</span></h2>
+			          <div class="shadow p-4">
+			            <div class="list max_height-215 overflow-auto row row-cols-1 px-2">
+			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">在腳應情朋客藥有學</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
+			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">著是利時，怎生了百</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
+			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">到基些知的每學外</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
+			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">半面一響面定山</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
+			            </div>
+			            <div class="text-center"><a class="btn btn-outline-light btn-sm border text-body rounded-pill tw-text-sm px-3 mt-2" href="">more</a></div>
+			          </div>
+			        </div>
+			        <div class="col-md-4">
+			          <h2 class="h5 text-center pb-1 mb-4"><span class="border-bottom border-primary pb-1">標籤雲</span></h2>
+			          <!-- tagscloud -->
+			          <div id="tagscloud" class="tagscloud shadow p-4">
+			            <a class="tagc2" href="" target="_blank">是刻再</a>
+			            <a class="tagc3" href="" target="_blank" style="font-size: 1.5rem;">成故國</a>
+			            <a class="tagc1" href="" target="_blank">在得老事</a>
+			            <a class="tagc2" href="" target="_blank" style="font-size: 3rem;">竟不那那的建</a>
+			            <a class="tagc4" href="" target="_blank">是刻再</a>
+			            <a class="tagc2" href="" target="_blank" style="font-size: 1.5rem;">成故國</a>
+			            <a class="tagc1" href="" target="_blank" style="font-size: 1.7rem;">是子大接</a>
+			            <a class="tagc3" href="" target="_blank">在得老事</a>
+			            <a class="tagc3" href="" target="_blank" style="font-size: 1.7rem;">是子大接</a>
+			            <a class="tagc4" href="" target="_blank" style="font-size: 1.5rem;">成故國</a>
+			          </div>
+			          <!-- /tagscloud -->
+			        </div>
+			      </div>
+			      <div class="groupSlide swiperParent pt-lg-3 my-4 mt-lg-5">
+			        <h2 class="h5 text-center pb-1 mb-4"><span class="border-bottom border-primary pb-1">特色典藏</span></h2>
+			        <div class="arrowOut">
+			          <!-- slides -->
+			          <div class="swiperSlides">
+			            <div class="swiper-container overflow-hidden">
+			              <div class="swiper-wrapper">
+			                <div class="swiper-slide">
+			                  <div class="slide p-2">
+			                    <a class="d-block" href="">
+			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(img/slide.jpg)">
+			                      </div>
+			                    </a>
+			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
+			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                      
+			                      
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="swiper-slide">
+			                  <div class="slide p-2">
+			                    <a class="d-block" href="">
+			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(img/slide.jpg)">
+			                      </div>
+			                    </a>
+			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
+			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                      
+			                      
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="swiper-slide">
+			                  <div class="slide p-2">
+			                    <a class="d-block" href="">
+			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/)">
+			                      </div>
+			                    </a>
+			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
+			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                      
+			                      
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="swiper-slide">
+			                  <div class="slide p-2">
+			                    <a class="d-block" href="">
+			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;4)">
+			                      </div>
+			                    </a>
+			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
+			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                      
+			                      
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="swiper-slide">
+			                  <div class="slide p-2">
+			                    <a class="d-block" href="">
+			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;5)">
+			                      </div>
+			                    </a>
+			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
+			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                      
+			                      
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="swiper-slide">
+			                  <div class="slide p-2">
+			                    <a class="d-block" href="">
+			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;6)">
+			                      </div>
+			                    </a>
+			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
+			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                      
+			                      
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="swiper-slide">
+			                  <div class="slide p-2">
+			                    <a class="d-block" href="">
+			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;7)">
+			                      </div>
+			                    </a>
+			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
+			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                      
+			                      
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="swiper-scrollbar"></div>
+			            </div>
+			            <div class="swiper-button-prev"></div>
+			            <div class="swiper-button-next"></div>
+			          </div>
+			          <!-- /slides -->
+			        </div>
+			      </div>
+			    </div>
+			    <!-- /container -->
+			  </div>
+			  <!-- /content -->
+			</section>
+			<!-- /index main content -->
+		</main>
+
+		<!-- footer -->
+		<footer>
+		  <div id="footer" class="tw-relative">
+		    <!-- container -->
+		    <div class="py-4tw-space-y-4 container-fluid">
+		      <div class="footer row gy-4 align-items-start justify-content-between">
+		        <div class="col-12">
+		          <div class="row gx-4 gy-2 justify-content-center align-items-center">
+		            
+		            
+		            
+		            <div class="col-auto"><span class="sum bg-secondary rounded-pill p-2 px-4">瀏覽人次：<span class="number">123</span></span></div>
+		          </div>
+		        </div>
+		        <div class="col-12">
+		          <div class="row gy-2 flex-column text-center">
+		            
+		            <div class="col">靜宜大學蓋夏圖書館版權所有  本網站適用於IE9以上瀏覽器版本，若並非適用版本請更新您的瀏覽器，或使用其他瀏覽器軟體 Google Chrome、Firefox</div>
+		            <div class="col">
+		              <div class="row row-cols-auto justify-content-center gy-2">
+		                <div class="col">地址：43303　台中市沙鹿區臺灣大道七段200號</div>
+		                <div class="col">電話：(04) 26328001-11633</div>
+		                <div class="col">傳真：(04)-26311062‧E-mail:pu10500@pu.edu.tw</div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		    <!-- /container -->
+		  </div>
+		</footer>
+		<!-- /footer -->
+		<a id="gototop" class="tw-text-white hover:tw-text-white tw-bg-black tw-bg-opacity-50 hover:tw-bg-opacity-70 tw-opacity-0 tw-no-underline tw-p-2 tw-px-3 tw-rounded tw-text-center tw-fixed tw-bottom-0 tw-right-0 tw-mr-3 tw-mb-3 tw-z-10" href="" title="回到最上"><i class="fas fa-angle-up"></i><span class="tw-sr-only">回到最上</span></a>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>
