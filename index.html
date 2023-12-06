@@ -5,57 +5,71 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="Designer&Developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師">
-		<title>靜宜記憶資料庫</title>
+		<title>疾病管制署-學術典藏系統</title>
 		<!-- favicon -->
-		<link rel="shortcut icon" type="image/svg" href="img/favicon.svg" />
-		<!-- /favicon -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-icons.css">
-		<link rel="stylesheet" href="css/tailwind.min.css">
-		<link rel="stylesheet" href="css/fontawesome.min.css">
-		<link rel="stylesheet" href="css/swiper-bundle.min.css">
-		<link rel="stylesheet" href="css/main.min.css">
-		<link rel="stylesheet" href="css/colors.min.css">
-		<link rel="stylesheet" href="css/editor.min.css">
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.svg" />
+		<!-- bs:css -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<!-- endinject -->
+		<!-- bsicon:css -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+		<!-- endinject -->
+		<!-- tw:css -->
+		<link rel="stylesheet" type="text/css" href="css/tailwind.css">
+		<!-- endinject -->
+		<!-- fa:css -->
+		<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+		<!-- endinject -->
+		<!-- vendors:css -->
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+		<!-- endinject -->
+		<!-- main:css -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- endinject -->
+		<!-- colors:css -->
+		<link rel="stylesheet" type="text/css" href="css/colors.css">
+		<!-- endinject -->
+		<!-- style:css -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- endinject -->
 	</head>
 
 	<body id="top" class="index tw-min-h-screen">
 		<span class="tw-hidden">Some images has been designed using resources from <a href="https://unsplash.com/">Unsplash</a> &amp; <a href="https://pixabay.com/">Pixabay</a> &amp; <a href="https://www.pexels.com/">Pexels</a> &amp; <a href="https://www.freepik.com/">Freepik</a> and some icons from <a href="https://www.flaticon.com/">Flaticon</a></span>
 		<!-- header -->
-		<header class="pt-lg-4 lg:tw-relative">
-			<a id="first" class="visually-hidden-focusable" href="" aria-hidden="true"></a>
+		<header class="mb-lg-5 pb-4 tw-relative">
 			<!-- container -->
-			<div class="tw-shadow-xl tw-bg-white lg:tw-shadow-none">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light py-0 tw-flex-wrap">
+			<div class="bg-white bg-opacity-75 tw-shadow-xl lg:tw-bg-transparent lg:tw-shadow-none">
+				<nav class="navbar navbar-expand-lg flex-wrap py-0">
 					<!-- Logo & Right Links -->
 					<div class="logoBG w-100">
-						<div class="d-flex w-100 position-relative justify-content-between container-fluid">
+						<div class="d-flex w-100 flex-wrap container-fluid">
 							<!-- Logo -->
-							<h1 class="d-flex align-items-center m-0">
-								<a class="logo navbar-brand" href="" title="靜宜大學-校史資料室">
-									<img class="w-100" src="img/logo.svg" alt="靜宜大學-校史資料室">
-									<span class="tw-sr-only">靜宜大學-校史資料室</span>
-								</a>
-							</h1>
-							<div class="navbar-brand py-1 m-0 d-flex align-items-center">
-								<a class="logo d-inline-block ms-2" href="index.html" title="典藏靜宜">
-									<img src="img/logo2.svg" alt="典藏靜宜">
-									<span class="tw-sr-only">典藏靜宜</span>
-								</a>
-							</div>
-							<div class="rightItems d-flex align-items-center">
-								<a class="text-primary min_width-45 text-center text-decoration-none d-lg-none" href=""><i class="fa-solid fa-user"></i><span class="visually-hidden">使用者登入</span></a>
-								<button class="navbar-toggler tw-border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
-									<i class="text-primary fas fa-bars"></i><span class="tw-sr-only">打開主選單</span></span>
-								</button>
+							<div class="d-flex align-items-center w-100 lg:tw-w-auto flex-grow-1">
+								<h1 class="d-flex align-items-center m-0 flex-grow-auto">
+									<a class="logo navbar-brand me-0 me-lg-3" href="index.html" title="疾病管制署學術典藏">
+										<img class="w-100" src="img/logo_ct.png" alt="疾病管制署學術典藏">
+									</a>
+								</h1>
+								<div class="rightItems d-flex align-items-center ms-auto">
+									<button class="navbar-toggler tw-border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+										<i class="text-primary fas fa-bars"></i><span class="tw-sr-only">打開主選單</span></span>
+									</button>
+								</div>
 							</div>
 							<!-- /Logo -->
 							<!-- Right Nav -->
-							<div class="collapse navbar-collapse justify-content-end">
-								<ul class="sub_nav navbar-nav ms-auto tw-mt-0 tw-text-sm tw-flex-row tw-justify-center align-items-center">
-									<li class="nav-item d-flex tw-items-center">
-										<a class="nav-link text-nowrap hover:tw-underline" href="#">HI,XOX 登入</a>
+							<div class="collapse navbar-collapse justify-content-end my-2">
+								<ul class="sub_nav navbar-nav ms-auto tw-mt-0 tw-text-sm tw-flex-row tw-justify-center align-items-center d-none d-lg-flex">
+									<li class="pseudo:line_v nav-item d-flex tw-items-center">
+										<a class="nav-link text-nowrap hover:tw-underline" href="">繁體中文</a>
+									</li>
+									<li class="pseudo:line_v nav-item d-flex tw-items-center">
+										<a class="nav-link text-nowrap hover:tw-underline" href="">English</a>
+									</li>
+									<li class="pseudo:line_v nav-item d-flex tw-items-center">
+										<span class="mx-2">帳號：xxx</span>
+										<a class="nav-link text-nowrap hover:tw-underline" href="">登出</a>
 									</li>
 								</ul>
 							</div>
@@ -64,15 +78,15 @@
 					</div>
 					<!-- /Logo & Right Links -->
 					<!-- mainMenu -->
-					<div class="mainmenu underlineAni my-4 d-none d-lg-block w-100 tw-relative">
+					<div class="mainmenu bg-primary mt-2 d-none d-lg-block w-100 tw-relative">
 						
 						<div class="mainmenuContainer container-fluid">
-							<ul class="nav shadow rounded-pill justify-content-center m-0">
+							<ul class="nav justify-content-center m-0">
 								<li>
-									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" href="#">簡介</a>
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" href="#"><i class="fa-solid fa-house me-1"></i>首頁</a>
 								</li>
 								<li class="dropdown">
-									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">典藏瀏覽</a>
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#"><i class="fa-solid fa-file-shield me-1"></i>研究焦點</a>
 									<!-- Dropdown -->
 									<div class="indent dropdown-menu overflow-auto border-0 py-0 tw-bg-white tw-bg-opacity-95">
 										<ul class="list-group m-0">
@@ -87,7 +101,7 @@
 									<!-- /Dropdown -->
 								</li>
 								<li class="dropdown">
-									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">典藏查詢</a>
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#"><i class="fa-solid fa-book me-1"></i>學術著作</a>
 									<!-- Dropdown -->
 									<div class="indent dropdown-menu overflow-auto border-0 py-0 tw-bg-white tw-bg-opacity-95">
 										<ul class="list-group m-0">
@@ -118,7 +132,7 @@
 									<!-- /Dropdown -->
 								</li>
 								<li class="dropdown">
-									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">特色典藏</a>
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#"><i class="fa-solid fa-file-medical me-1"></i>研究計畫</a>
 									<!-- Dropdown -->
 									<div class="indent dropdown-menu overflow-auto border-0 py-0 tw-bg-white tw-bg-opacity-95">
 										<ul class="list-group m-0">
@@ -159,7 +173,7 @@
 									<!-- /Dropdown -->
 								</li>
 								<li class="">
-									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" href="#">個人化服務</a>
+									<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black" href="#"><i class="fa-solid fa-user me-1"></i>研究人員</a>
 								</li>
 							</ul>
 						</div>
@@ -169,7 +183,7 @@
 			</div>
 			<!-- /container -->
 			<!-- offcanvas -->
-			<div id="offcanvas" class="bg_primary offcanvas offcanvas-start tw-w-3/4" tabindex="-1">
+			<div id="offcanvas" class="bg-primary offcanvas offcanvas-start tw-w-3/4" tabindex="-1">
 			  <div class="offcanvas-header py-2">
 			    <span></span>
 			    <button type="button" class="tw-px-[12px] tw-border-0 tw-bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
@@ -179,12 +193,12 @@
 			      <ul class="list-unstyled my-0">
 			        <li class="py-1">
 			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
-			            <a class="d-block w-100 position-relative" href="#">簡介</a>
+			            <a class="d-block w-100 position-relative" href="#"><i class="fa-solid fa-house me-1"></i>首頁</a>
 			          </div>
 			        </li>
 			        <li class="py-1 parent">
 			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
-			            <a class="d-block w-100 position-relative" href="#">典藏瀏覽</a>
+			            <a class="d-block w-100 position-relative" href="#"><i class="fa-solid fa-file-shield me-1"></i>研究焦點</a>
 			            <a class="arrow px-3" href="" title="展開/收合選單"><span class="toggle fas fa-angle-right"><small class="tw-sr-only">展開選單</small></span><span class="toggle fas fa-angle-down tw-hidden"><small class="tw-sr-only">收合選單</small></a>
 			          </div>
 			          <ul class="toggle list-unstyled tw-pl-4 tw-mt-1 tw-hidden">
@@ -202,7 +216,7 @@
 			        </li>
 			        <li class="py-1 parent">
 			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
-			            <a class="d-block w-100 position-relative" href="#">典藏查詢</a>
+			            <a class="d-block w-100 position-relative" href="#"><i class="fa-solid fa-book me-1"></i>學術著作</a>
 			            <a class="arrow px-3" href="" title="展開/收合選單"><span class="toggle fas fa-angle-right"><small class="tw-sr-only">展開選單</small></span><span class="toggle fas fa-angle-down tw-hidden"><small class="tw-sr-only">收合選單</small></a>
 			          </div>
 			          <ul class="toggle list-unstyled tw-pl-4 tw-mt-1 tw-hidden">
@@ -232,7 +246,7 @@
 			        </li>
 			        <li class="py-1 parent">
 			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
-			            <a class="d-block w-100 position-relative" href="#">特色典藏</a>
+			            <a class="d-block w-100 position-relative" href="#"><i class="fa-solid fa-file-medical me-1"></i>研究計畫</a>
 			            <a class="arrow px-3" href="" title="展開/收合選單"><span class="toggle fas fa-angle-right"><small class="tw-sr-only">展開選單</small></span><span class="toggle fas fa-angle-down tw-hidden"><small class="tw-sr-only">收合選單</small></a>
 			          </div>
 			          <ul class="toggle list-unstyled tw-pl-4 tw-mt-1 tw-hidden">
@@ -298,7 +312,23 @@
 			        </li>
 			        <li class="py-1">
 			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
-			            <a class="d-block w-100 position-relative" href="#">個人化服務</a>
+			            <a class="d-block w-100 position-relative" href="#"><i class="fa-solid fa-user me-1"></i>研究人員</a>
+			          </div>
+			        </li>
+			        <hr class="py-0">
+			        <li class="py-1">
+			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			            <a class="d-block w-100 position-relative" href="">中文</a>
+			          </div>
+			        </li>
+			        <li class="py-1">
+			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			            <a class="d-block w-100 position-relative" href="">English</a>
+			          </div>
+			        </li>
+			        <li class="py-1">
+			          <div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
+			            <span class="text-nowrap me-4">帳號：xxx</span><a class="d-block w-100 position-relative" href="">登出</a>
 			          </div>
 			        </li>
 			      </ul>
@@ -308,166 +338,59 @@
 			<!-- offcanvas -->
 		</header>
 		<!-- /header -->
-		<!-- banner -->
-		<!-- /banner -->
 
 		<main>
-			<!-- index main content -->
-			<div class="searchBox min_height-300@md min_height-400@lg d-flex align-items-center py-2 my-md-4" style="background: url(img/banner.jpg)  no-repeat center center; background-size: cover;">
-			  <form class="container-fluid">
-			    <div class="p-3 bg-dark bg-opacity-30 rounded-4 shadow col-sm-8 col-lg-7 col-xl-6 ms-auto">
-			      <div class="p-0 card-body">
-			        <div class="tabs mb-2"><span class="text-light btn btn-primary me-2 tw-cursor-default">簡易檢索</span><a class="btn btn-light me-2" href="">進階檢索</a></div>
-			        <div class="input-group">
-			          <input type="text" class="form-control" placeholder="關鍵字搜尋" aria-describedby="btnSearch">
-			          <a class="btn_primary btn btn-primary" href="#"><i class="me-1 fas fa-search"></i>館藏查詢</a>
-			        </div>
-			        <div class="keywords mt-2"><span>熱門檢索詞：</span><a class="tw-underline me-2" href="#">病而得的事</a><a class="tw-underline me-2" href="#">每議人已識影</a></div>
-			      </div>
-			    </div>
-			  </form>
-			</div>
-			<section id="content" class="tw-space-y-4 tw-p-0 tw-relative">
-			  <!-- content -->
-			  <div class="min_height-200 pt-4 tw-space-y-4 lg:tw-space-y-6">
-			    <!-- container -->
-			    <div class="container-fluid overflow-hidden">
-			      <div class="highlight row g-4">
-			        <div class="col-md-4">
-			          <h2 class="h5 text-center pb-1 mb-4"><span class="border-bottom border-primary pb-1">熱門典藏</span></h2>
-			          <div class="shadow p-4">
-			            <div class="list max_height-215 overflow-auto row row-cols-1 px-2">
-			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">在腳應情朋客藥有學</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
-			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">著是利時，怎生了百</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
-			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">到基些知的每學外</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
-			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">半面一響面定山</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
-			            </div>
-			            <div class="text-center"><a class="btn btn-outline-light btn-sm border text-body rounded-pill tw-text-sm px-3 mt-2" href="">more</a></div>
-			          </div>
-			        </div>
-			        <div class="col-md-4">
-			          <h2 class="h5 text-center pb-1 mb-4"><span class="border-bottom border-primary pb-1">最新典藏</span></h2>
-			          <div class="shadow p-4">
-			            <div class="list max_height-215 overflow-auto row row-cols-1 px-2">
-			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">在腳應情朋客藥有學</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
-			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">著是利時，怎生了百</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
-			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">到基些知的每學外</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
-			              <div class="col mb-2 pb-2 border-bottom"><a class="pe-2" href="">半面一響面定山</a><span class="pseudo:parentheses tw-text-sm">12</span></div>
-			            </div>
-			            <div class="text-center"><a class="btn btn-outline-light btn-sm border text-body rounded-pill tw-text-sm px-3 mt-2" href="">more</a></div>
-			          </div>
-			        </div>
-			        <div class="col-md-4">
-			          <h2 class="h5 text-center pb-1 mb-4"><span class="border-bottom border-primary pb-1">標籤雲</span></h2>
-			          <!-- tagscloud -->
-			          <div id="tagscloud" class="tagscloud shadow p-4">
-			            <a class="tagc2" href="" target="_blank">是刻再</a>
-			            <a class="tagc3" href="" target="_blank" style="font-size: 1.5rem;">成故國</a>
-			            <a class="tagc1" href="" target="_blank">在得老事</a>
-			            <a class="tagc2" href="" target="_blank" style="font-size: 3rem;">竟不那那的建</a>
-			            <a class="tagc4" href="" target="_blank">是刻再</a>
-			            <a class="tagc2" href="" target="_blank" style="font-size: 1.5rem;">成故國</a>
-			            <a class="tagc1" href="" target="_blank" style="font-size: 1.7rem;">是子大接</a>
-			            <a class="tagc3" href="" target="_blank">在得老事</a>
-			            <a class="tagc3" href="" target="_blank" style="font-size: 1.7rem;">是子大接</a>
-			            <a class="tagc4" href="" target="_blank" style="font-size: 1.5rem;">成故國</a>
-			          </div>
-			          <!-- /tagscloud -->
-			        </div>
-			      </div>
-			      <div class="groupSlide swiperParent pt-lg-3 my-4 mt-lg-5">
-			        <h2 class="h5 text-center pb-1 mb-4"><span class="border-bottom border-primary pb-1">特色典藏</span></h2>
-			        <div class="arrowOut">
+			<!-- main content -->
+			<section class="tw-p-0 tw-relative">
+			
+			  <!-- container -->
+			  <div class="container-fluid d-flex flex-column gap-3 gap-lg-4">
+			    <!-- Slides and Icons -->
+			    <div class="slidesIcons">
+			      <div class="row gap-3 gap-lg-4">
+			        <!-- Slides -->
+			        <div class="col-xl-7 col-xxl-8">
 			          <!-- slides -->
-			          <div class="swiperSlides">
-			            <div class="swiper-container overflow-hidden">
+			          <div class="swiperSlides oneSlide arrowThick bg-white">
+			            <div class="swiper">
 			              <div class="swiper-wrapper">
 			                <div class="swiper-slide">
-			                  <div class="slide p-2">
+			                  <div class="slide">
 			                    <a class="d-block" href="">
-			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(img/slide.jpg)">
+			                      <span class="tw-sr-only">圖片說明</span>
+			                      <div class="aspect ratio_custom tw-bg-no-repeat tw-bg-center tw-bg-cover tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/)">
 			                      </div>
 			                    </a>
-			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
-			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                    <div class="content bg-secondary text-white p-2 px-lg-3">
+			                      <h3 class="fs-5 text-truncate m-0">標題</h3><p class="text-truncate m-0">路公以孩說是面停要傳為小醫、寶許近張失。快路明新預作</p>
 			                      
 			                      
 			                    </div>
 			                  </div>
 			                </div>
 			                <div class="swiper-slide">
-			                  <div class="slide p-2">
+			                  <div class="slide">
 			                    <a class="d-block" href="">
-			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(img/slide.jpg)">
+			                      <span class="tw-sr-only">圖片說明</span>
+			                      <div class="aspect ratio_custom tw-bg-no-repeat tw-bg-center tw-bg-cover tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;2)">
 			                      </div>
 			                    </a>
-			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
-			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                    <div class="content bg-secondary text-white p-2 px-lg-3">
+			                      <h3 class="fs-5 text-truncate m-0">標題</h3><p class="text-truncate m-0">路公以孩說是面停要傳為小醫、寶許近張失。快路明新預作</p>
 			                      
 			                      
 			                    </div>
 			                  </div>
 			                </div>
 			                <div class="swiper-slide">
-			                  <div class="slide p-2">
+			                  <div class="slide">
 			                    <a class="d-block" href="">
-			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/)">
+			                      <span class="tw-sr-only">圖片說明</span>
+			                      <div class="aspect ratio_custom tw-bg-no-repeat tw-bg-center tw-bg-cover tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;3)">
 			                      </div>
 			                    </a>
-			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
-			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
-			                      
-			                      
-			                    </div>
-			                  </div>
-			                </div>
-			                <div class="swiper-slide">
-			                  <div class="slide p-2">
-			                    <a class="d-block" href="">
-			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;4)">
-			                      </div>
-			                    </a>
-			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
-			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
-			                      
-			                      
-			                    </div>
-			                  </div>
-			                </div>
-			                <div class="swiper-slide">
-			                  <div class="slide p-2">
-			                    <a class="d-block" href="">
-			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;5)">
-			                      </div>
-			                    </a>
-			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
-			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
-			                      
-			                      
-			                    </div>
-			                  </div>
-			                </div>
-			                <div class="swiper-slide">
-			                  <div class="slide p-2">
-			                    <a class="d-block" href="">
-			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;6)">
-			                      </div>
-			                    </a>
-			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
-			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
-			                      
-			                      
-			                    </div>
-			                  </div>
-			                </div>
-			                <div class="swiper-slide">
-			                  <div class="slide p-2">
-			                    <a class="d-block" href="">
-			                      <div class="aspect rounded-pill ratio-16/9 tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/800x450/?text&#x3D;7)">
-			                      </div>
-			                    </a>
-			                    <div class="content col-8 mx-auto px-2 rounded-pill text-center bg-white bg-opacity-80 position-relative shadow-sm">
-			                      <p class="fw-bold p-2 py-3">時了改要化成文製管<small class="pseudo:parentheses d-block">12</small></p>
+			                    <div class="content bg-secondary text-white p-2 px-lg-3">
+			                      <h3 class="fs-5 text-truncate m-0">標題</h3><p class="text-truncate m-0">路公以孩說是面停要傳為小醫、寶許近張失。快路明新預作</p>
 			                      
 			                      
 			                    </div>
@@ -476,56 +399,198 @@
 			              </div>
 			              <div class="swiper-scrollbar"></div>
 			            </div>
-			            <div class="swiper-button-prev"></div>
-			            <div class="swiper-button-next"></div>
+			            <div class="swiper-button-prev oneSlide-prev"></div>
+			            <div class="swiper-button-next oneSlide-next"></div>
 			          </div>
 			          <!-- /slides -->
 			        </div>
+			        <!-- /Slides -->
+			        <!-- Icons -->
+			        <div class="icons col">
+			          <div class="row row-cols-2 row-cols-md-4 row-cols-xl-2 g-3 g-lg-4">
+			            <div class="col">
+			              <div class="d-grid gap-3 gap-xxl-5 text-center bg-primary bg-opacity-20 p-2 p-lg-3">
+			                <div class="fs-5">研究人員數</div>
+			                <div class="icon"><i class="text-primary fa-solid fa-users fa-2xl"></i></div>
+			                <div class="fs-3 fw-bold">89</div>
+			              </div>
+			            </div>
+			            <div class="col">
+			              <div class="d-grid gap-3 gap-xxl-5 text-center bg-secondary bg-opacity-20 p-2 p-lg-3">
+			                <div class="fs-5">學術著作篇數</div>
+			                <div class="icon"><i class="text-secondary fa-solid fa-file-pen fa-2xl"></i></div>
+			                <div class="fs-3 fw-bold">89</div>
+			              </div>
+			            </div>
+			            <div class="col">
+			              <div class="d-grid gap-3 gap-xxl-5 text-center bg-secondary bg-opacity-20 p-2 p-lg-3">
+			                <div class="fs-5">瀏覽人數統計</div>
+			                <div class="icon"><i class="text-secondary fa-solid fa-eye fa-2xl"></i></div>
+			                <div class="fs-3 fw-bold">89</div>
+			              </div>
+			            </div>
+			            <div class="col">
+			              <div class="d-grid gap-3 gap-xxl-5 text-center bg-primary bg-opacity-20 p-2 p-lg-3">
+			                <div class="fs-5">研究計畫數</div>
+			                <div class="icon"><i class="text-primary fa-solid fa-file-lines fa-2xl"></i></div>
+			                <div class="fs-3 fw-bold">89</div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			        <!-- /Icons -->
 			      </div>
 			    </div>
-			    <!-- /container -->
+			    <!-- /Slides and Icons -->
+			    <!-- programs, publications and ranking -->
+			    <div class="programs_publications_ranking">
+			      <div class="row g-4 g-xxl-5">
+			        <!-- programs -->
+			        <div class="col-lg-4">
+			          <div class="card border-0">
+			            <p class="fs-4 text-center bg-primary bg-opacity-20 px-2"><i class="text-primary fa-solid fa-file-lines me-2"></i>最新研究計畫</p>
+			            <div class="overflow-auto">
+			              <ul class="list-group list-group-flush">
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">路公以孩說是面停要傳為小醫、寶許近張失。快路明新預作，先思大於是能步英往</a>
+			                  <span class="text-primary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">路公以孩說是面停要傳為小醫、寶許近張失。快路明新預作，先思大於是能步英往</a>
+			                  <span class="text-primary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">路公以孩說是面停要傳為小醫、寶許近張失。快路明新預作，先思大於是能步英往</a>
+			                  <span class="text-primary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">路公以孩說是面停要傳為小醫、寶許近張失。快路明新預作，先思大於是能步英往</a>
+			                  <span class="text-primary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">路公以孩說是面停要傳為小醫、寶許近張失。快路明新預作，先思大於是能步英往</a>
+			                  <span class="text-primary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			              </ul>
+			            </div>
+			            <p class="text-center">
+			              <a class="btn btn-light bg-white btn-sm">more</a>
+			            </p>
+			          </div>
+			        </div>
+			        <!-- /programs -->
+			        <!-- publications -->
+			        <div class="col-lg-4">
+			          <div class="card border-0">
+			            <p class="fs-4 text-center bg-secondary bg-opacity-20 px-2"><i class="text-secondary fa-solid fa-file-pen me-2"></i>最新學術著作</p>
+			            <div class="overflow-auto">
+			              <ul class="list-group list-group-flush">
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</a>
+			                  <span class="text-secondary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</a>
+			                  <span class="text-secondary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</a>
+			                  <span class="text-secondary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</a>
+			                  <span class="text-secondary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <a class="me-2 tw-align-middle" href="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</a>
+			                  <span class="text-secondary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			              </ul>
+			            </div>
+			            <p class="text-center">
+			              <a class="btn btn-light bg-white btn-sm">more</a>
+			            </p>
+			          </div>
+			        </div>
+			        <!-- /publications -->
+			        <!-- ranking -->
+			        <div class="col-lg-4">
+			          <div class="card border-0">
+			            <p class="fs-4 text-center bg-primary bg-opacity-20 px-2"><i class="text-primary fa-solid fa-magnifying-glass-chart me-2"></i>瀏覽排行</p>
+			            <div class="overflow-auto">
+			              <ul class="list-group list-group-flush">
+			                <li class="list-group-item px-0">
+			                  <span class="badge bg-primary d-inline-flex align-items-center me-2 px-2"><i class="fa-solid fa-file-lines me-1"></i>研究計畫</span>
+			                  <a class="me-2 tw-align-middle" href="">中記己有算從選員，黑美回時</a>
+			                  <span class="text-primary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <span class="badge bg-primary d-inline-flex align-items-center me-2 px-2"><i class="fa-solid fa-file-lines me-1"></i>研究計畫</span>
+			                  <a class="me-2 tw-align-middle" href="">中記己有算從選員，黑美回時</a>
+			                  <span class="text-primary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <span class="badge bg-secondary d-inline-flex align-items-center me-2 px-2"><i class="fa-solid fa-file-pen me-1"></i>學術著作</span>
+			                  <a class="me-2 tw-align-middle" href="">路公以孩說是面停要傳為小醫、寶許近張失。快路明新預作，先思大於是能步英往</a>
+			                  <span class="text-secondary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <span class="badge bg-secondary d-inline-flex align-items-center me-2 px-2"><i class="fa-solid fa-file-pen me-1"></i>學術著作</span>
+			                  <a class="me-2 tw-align-middle" href="">這們推減苦去器語果北向山年星將之人卻水著學接那</a>
+			                  <span class="text-secondary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			                <li class="list-group-item px-0">
+			                  <span class="badge bg-primary d-inline-flex align-items-center me-2 px-2"><i class="fa-solid fa-file-lines me-1"></i>研究計畫</span>
+			                  <a class="me-2 tw-align-middle" href="">合安人計都假細；河續他解級就少定聞業</a>
+			                  <span class="text-primary d-inline-block me-2"><i class="fa-solid fa-eye me-1"></i>13</span>
+			                </li>
+			              </ul>
+			            </div>
+			          </div>
+			        </div>
+			        <!-- /ranking -->
+			    </div>
+			    <!-- /programs, publications and ranking -->
 			  </div>
-			  <!-- /content -->
+			  <!-- /container -->
 			</section>
-			<!-- /index main content -->
+			<!-- /main content -->
 		</main>
 
 		<!-- footer -->
-		<footer>
+		<footer class="bg-light mt-3 mt-lg-4 py-4">
 		  <div id="footer" class="tw-relative">
-		    <!-- container -->
-		    <div class="py-4tw-space-y-4 container-fluid">
-		      <div class="footer row gy-4 align-items-start justify-content-between">
-		        <div class="col-12">
-		          <div class="row gx-4 gy-2 justify-content-center align-items-center">
-		            
-		            
-		            
-		            <div class="col-auto"><span class="sum bg-secondary rounded-pill p-2 px-4">瀏覽人次：<span class="number">123</span></span></div>
-		          </div>
+		    <div class="footerBg">
+		      <div class="footer d-flex flex-column gap-3 gap-lg-4 container-fluid">
+		        <div class="row row-cols-auto gx-4 gy-2 align-items-center justify-content-center">
+		          <div class="col"><a class="btn btn-dark btn-sm" href="">使用說明</a></div>
+		          <div class="col"><a class="btn btn-dark btn-sm" href="">相關網站</a></div>
+		          <div class="col"><a class="btn btn-dark btn-sm" href="">網站導覽</a></div>
+		          <div class="col"><a class="btn btn-dark btn-sm" href="">系統公告</a></div>
 		        </div>
-		        <div class="col-12">
-		          <div class="row gy-2 flex-column text-center">
-		            
-		            <div class="col">靜宜大學蓋夏圖書館版權所有  本網站適用於IE9以上瀏覽器版本，若並非適用版本請更新您的瀏覽器，或使用其他瀏覽器軟體 Google Chrome、Firefox</div>
-		            <div class="col">
-		              <div class="row row-cols-auto justify-content-center gy-2">
-		                <div class="col">地址：43303　台中市沙鹿區臺灣大道七段200號</div>
-		                <div class="col">電話：(04) 26328001-11633</div>
-		                <div class="col">傳真：(04)-26311062‧E-mail:pu10500@pu.edu.tw</div>
-		              </div>
-		            </div>
-		          </div>
+		        <div class="row row-cols-auto gx-4 gy-2 justify-content-center text-center">
+		          
+		          <div class="col">10050 臺北市中正區林森南路6號</div>
+		          <div class="col">電話：02-2395-9825</div>
+		          <div class="col">防疫專線：1922或 0800-001922 (全年無休免付費)</div>
+		          <div class="col">聽語障服務免付費傳真：0800-655955</div>
+		          <div class="col">國外可撥打 +886-800-001922(自國外撥打回國須自付國際電話費用)</div>
+		          <div class="col-12">Copyright © 2023 衛生福利部 疾病管制署. All rights reserved.</div>
 		        </div>
 		      </div>
 		    </div>
-		    <!-- /container -->
 		  </div>
 		</footer>
 		<!-- /footer -->
 		<a id="gototop" class="tw-text-white hover:tw-text-white tw-bg-black tw-bg-opacity-50 hover:tw-bg-opacity-70 tw-opacity-0 tw-no-underline tw-p-2 tw-px-3 tw-rounded tw-text-center tw-fixed tw-bottom-0 tw-right-0 tw-mr-3 tw-mb-3 tw-z-10" href="" title="回到最上"><i class="fas fa-angle-up"></i><span class="tw-sr-only">回到最上</span></a>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/swiper-bundle.min.js"></script>
-		<script src="js/script.min.js"></script>
+		<!-- bs:js -->
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<!-- endinject -->
+		<!-- vendors:js -->
+		<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+		<!-- endinject -->
+		<!-- script:js -->
+		<script type="text/javascript" src="js/script.js"></script>
+		<!-- endinject -->
 	</body>
 </html>
